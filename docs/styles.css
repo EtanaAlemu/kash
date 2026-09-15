@@ -78,9 +78,17 @@ a:hover {
   width: 2rem;
   height: 2rem;
   border-radius: 0.55rem;
-  background:
-    linear-gradient(135deg, var(--cyan), var(--mint));
-  box-shadow: 0 0 24px rgba(79, 210, 255, 0.35);
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 0 24px rgba(79, 210, 255, 0.28);
+}
+
+.hero-icon {
+  width: min(7.5rem, 36vw);
+  height: auto;
+  border-radius: 1.35rem;
+  margin: 0 0 1.25rem;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45), 0 0 40px rgba(79, 210, 255, 0.18);
 }
 
 .nav-links {
