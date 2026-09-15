@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — Kash</title>
+  <meta name="description" content="Privacy Policy for the Kash expense tracker app." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Sora:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="./">
+        <span class="brand-mark" aria-hidden="true"></span>
+        Kash
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="./">Home</a>
+        <a href="./privacy.html" aria-current="page">Privacy</a>
+        <a href="./terms.html">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap legal">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective date: September 15, 2026 · App: Kash (com.kash.app.kash)</p>
+
+    <p>
+      This Privacy Policy explains how the Kash mobile application (“Kash”, “we”, “us”)
+      handles information. Kash is designed as an <strong>offline-first</strong> expense tracker:
+      your financial entries are stored on your device.
+    </p>
+
+    <h2>1. Who we are</h2>
+    <p>
+      Kash is published as an open-source / publicly distributed app under the package name
+      <code>com.kash.app.kash</code>. For privacy questions, contact us via
+      <a href="https://github.com/EtanaAlemu/kash/issues">GitHub Issues</a>.
+    </p>
+
+    <h2>2. Information you enter in the app</h2>
+    <p>Depending on how you use Kash, the app may store on your device:</p>
+    <ul>
+      <li>Expense and income amounts, merchants, notes, timestamps, and categories</li>
+      <li>Budget settings (for example monthly spending limit and income targets)</li>
+      <li>App preferences (lock settings, reminder on/off, and similar options)</li>
+      <li>Optional security question text and a hashed answer (not stored in plain text)</li>
+      <li>PIN-related secrets stored with platform secure storage (hashed/salted; not recoverable by us)</li>
+    </ul>
+    <p>
+      This information stays on your phone unless <strong>you</strong> export a backup or spreadsheet
+      and choose where to save or share that file.
+    </p>
+
+    <h2>3. What we do not collect as an account service</h2>
+    <ul>
+      <li>Kash does not require creating an account to use the core expense tracker</li>
+      <li>We do not operate a cloud ledger that syncs your spending history to our servers</li>
+      <li>We do not sell your personal or financial data</li>
+    </ul>
+
+    <h2>4. Crash diagnostics (limited network use)</h2>
+    <p>
+      To improve stability, release builds may send <strong>crash and diagnostic reports</strong>
+      using Google Firebase Crashlytics. Those reports can include device model, OS version,
+      app version, and stack traces. They are used to fix bugs.
+    </p>
+    <p>
+      Crash reporting is not used to upload your expense list, notes, or backup files.
+      Internet access in the app exists for this diagnostics purpose (and related connectivity checks).
+    </p>
+
+    <h2>5. Notifications</h2>
+    <p>
+      If you enable the daily reminder, Kash schedules a local notification (around 8:30 PM)
+      to remind you to log expenses. You can disable this in Settings. Notification permission
+      is requested so the reminder can appear.
+    </p>
+
+    <h2>6. Biometrics and app lock</h2>
+    <p>
+      If you enable app lock, Kash may use the device biometric hardware (fingerprint / face)
+      or a PIN you set. Biometric data is processed by your device’s system; Kash does not receive
+      or store your fingerprint or face template. PIN verification material is stored using
+      platform secure storage on your device.
+    </p>
+
+    <h2>7. Backups and files</h2>
+    <p>
+      When you save a backup or CSV, you choose the destination (for example Downloads or a folder
+      via the system file picker). Those files are under your control. On older Android versions,
+      limited storage permission may be used only to write exports.
+    </p>
+
+    <h2>8. Permissions (Android)</h2>
+    <ul>
+      <li><strong>Internet / network state</strong> — crash diagnostics</li>
+      <li><strong>Notifications</strong> — optional daily reminder</li>
+      <li><strong>Boot completed</strong> — restore reminder schedule after reboot</li>
+      <li><strong>Vibrate</strong> — notification feedback</li>
+      <li><strong>Biometric / fingerprint</strong> — optional unlock</li>
+      <li><strong>Write external storage (Android 9 and below only)</strong> — saving exports on older devices</li>
+    </ul>
+
+    <h2>9. Children’s privacy</h2>
+    <p>
+      Kash is not directed at children under 13 (or the minimum age required in your country).
+      Do not use the app if you are under that age.
+    </p>
+
+    <h2>10. Data retention and deletion</h2>
+    <p>
+      Because primary data is on-device, uninstalling Kash (or using in-app delete-all, if available)
+      removes local app data subject to your device’s normal uninstall behavior.
+      Crash reports retained by Google Firebase follow Google’s retention practices for that product.
+    </p>
+
+    <h2>11. Changes</h2>
+    <p>
+      We may update this policy. The effective date at the top will change when we do.
+      Continued use after an update means you accept the revised policy.
+    </p>
+
+    <h2>12. Contact</h2>
+    <p>
+      Privacy requests: <a href="https://github.com/EtanaAlemu/kash/issues">github.com/EtanaAlemu/kash/issues</a>
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© <span id="y"></span> Kash</span>
+      <span>
+        <a href="./privacy.html">Privacy</a>
+        ·
+        <a href="./terms.html">Terms</a>
+      </span>
+    </div>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>

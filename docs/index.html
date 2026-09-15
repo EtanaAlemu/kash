@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kash — Offline expense tracker</title>
+  <meta name="description" content="Kash is an offline-first, privacy-focused expense tracker. Your money data stays on your phone." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Sora:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="./">
+        <span class="brand-mark" aria-hidden="true"></span>
+        Kash
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="./" aria-current="page">Home</a>
+        <a href="./privacy.html">Privacy</a>
+        <a href="./terms.html">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap hero">
+      <h1>Kash</h1>
+      <p>
+        Offline-first expense tracking. Log spending and income, set a monthly limit,
+        and keep your data encrypted on your phone — not in our cloud.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="./privacy.html">Privacy Policy</a>
+        <a class="btn btn-ghost" href="./terms.html">Terms of Use</a>
+      </div>
+    </section>
+
+    <section class="wrap" style="padding-bottom: 4rem;">
+      <article class="panel">
+        <h2>Built for privacy</h2>
+        <p>
+          Transactions, categories, and budgets stay on your device in an encrypted local database.
+          Optional PIN or biometric lock, backups you control, and a daily reminder you can turn off.
+        </p>
+      </article>
+      <article class="panel">
+        <h2>What leaves the phone</h2>
+        <ul>
+          <li>Crash diagnostics only (Firebase Crashlytics), to help fix bugs</li>
+          <li>No account-based sync of your expense history to Kash servers</li>
+        </ul>
+      </article>
+      <article class="panel">
+        <h2>Play Store &amp; support</h2>
+        <p>
+          These pages are the official Privacy Policy and Terms for Kash on Google Play.
+          Questions or issues: open a discussion on the
+          <a href="https://github.com/EtanaAlemu/kash">GitHub repository</a>.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© <span id="y"></span> Kash</span>
+      <span>
+        <a href="./privacy.html">Privacy</a>
+        ·
+        <a href="./terms.html">Terms</a>
+      </span>
+    </div>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>

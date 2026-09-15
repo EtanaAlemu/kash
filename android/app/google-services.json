@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "775495519464",
+    "project_id": "kiosk-8272b",
+    "storage_bucket": "kiosk-8272b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775495519464:android:8ff5c2040a75fd15938d5d",
+        "android_client_info": {
+          "package_name": "com.kash.app.kash"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeIaWP4B3z7r071S2NSxdVl1xthMAtlUQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
